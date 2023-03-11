@@ -1,5 +1,27 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: #808080;
     font-family: 'Merriweather', serif;
+}
+.header {
+    border-bottom: 0.125rem solid aqua;
+}
+.header__container {
+    max-width: 120em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: aqua;
+    text-shadow: 0.125rem 0.5rem 0.125rem  #23222293;
+    margin-top: 1.3em;
 }
