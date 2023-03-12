@@ -129,6 +129,8 @@ h1 {
     width: 85%;
     height: auto;
     transition: 1.3s;
+    cursor: pointer;
+    transform: scale(0.9);
 }
 
 .checked_input {
