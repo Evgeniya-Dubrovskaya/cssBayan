@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-color: #808080;
     font-family: 'Merriweather', serif;
@@ -69,7 +72,7 @@ h1 {
     border: 0.0625rem solid  rgb(97, 190, 190);
 }
 .item_wrapper img {
-    width: 1.6rem;
+    width: 1.5rem;
 }
 .accordion_title {
     font-size: 1.3rem;
@@ -107,6 +110,22 @@ h1 {
     border-radius: 1em;
     width: 0;
     height: 0;
+}
+.accordion_item:hover .item_wrapper img {
+    transform: rotate(273deg);
+}
+.accordion_item:hover .accordion_images {
+    width: 85%;
+    height: auto;
+    transition: 1.3s;
+}
+
+.accordion_input:checked ~ .item_wrapper {
+    background-color:  rgb(109, 195, 195);
+}
+.accordion_item:checked ~ .item_wrapper img {
+    width: 1.5rem;
+    transform: rotate(-45deg)
 }
 .accordion_input:checked ~ .accordion_images {
     width: 85%;
