@@ -82,7 +82,7 @@ h1 {
     border: 0.0625rem solid  rgb(97, 190, 190);
 }
 .item_wrapper img {
-    width: 1.5rem;
+    width: 0;
 }
 .accordion_title {
     font-size: 1.3rem;
@@ -121,17 +121,21 @@ h1 {
     width: 0;
     height: 0;
 }
-.accordion_item:hover .item_wrapper img {
-    transform: rotate(272deg);
-    transition: 0.5s ease-out;
+@media (hover:hover) {
+    .accordion_item:hover .item_wrapper img {
+        transition: .5s;
+        width: 1.5em;
+    }
+    .accordion_item:hover .accordion_images {
+        width: 85%;
+        height: auto;
+        transition: 1.3s;
+        cursor: pointer;
+        transform: scale(0.9);
+    }
 }
-.accordion_item:hover .accordion_images {
-    width: 85%;
-    height: auto;
-    transition: 1.3s;
-    cursor: pointer;
-    transform: scale(0.9);
-}
+
+
 
 .checked_input {
     width: 0;
@@ -144,7 +148,7 @@ h1 {
 }
 .accordion_input:checked~ .item_wrapper img {
     width: 1.5rem;
-    transform: rotate(272deg)
+    transform: rotate(269deg)
 }
 .accordion_input:checked~ .accordion_images {
     width: 85%;
