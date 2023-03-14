@@ -121,6 +121,17 @@ h1 {
     width: 0;
     height: 0;
 }
+.accordion_item:active .accordion_title {
+    color: rgb(255, 0, 140);
+    opacity: 0.3;
+    transition-duration: .3s;
+}
+.accordion_item:active .accordion_images {
+    opacity: 0.3;
+    transition-duration: .3s;
+
+}
+
 @media (hover:hover) {
     .accordion_item:hover .item_wrapper img {
         transition: .5s;
@@ -131,7 +142,6 @@ h1 {
         height: auto;
         transition: 1.3s;
         cursor: pointer;
-        transform: scale(0.9);
     }
 }
 
