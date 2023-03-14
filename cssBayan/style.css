@@ -132,6 +132,7 @@ h1 {
 
 }
 
+
 @media (hover:hover) {
     .accordion_item:hover .item_wrapper img {
         transition: .5s;
@@ -158,7 +159,10 @@ h1 {
 }
 .accordion_input:checked~ .item_wrapper img {
     width: 1.5rem;
-    transform: rotate(269deg)
+    transform: rotate(269deg);
+}
+.accordion_item:active .item_wrapper img {
+    opacity: 0.6;
 }
 .accordion_input:checked~ .accordion_images {
     width: 85%;
