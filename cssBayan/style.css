@@ -11,7 +11,7 @@ body {
     background-color: #808080;
     font-family: 'Merriweather', serif;
     transition: all 1.7s ease-in-out;
-    
+    height: 100vh;
 }
 .header {
     border-bottom: 0.125rem solid aqua;
@@ -45,7 +45,7 @@ h1 {
     margin: 0 auto;
     padding: 0 2em;
     /*max-width: 120em;*/
-    padding-top: 4em;
+    padding-top: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,12 +101,12 @@ h1 {
 }
 @media (max-width: 900px) {
     .accordion_title {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 @media (max-width: 400px){
     .accordion_title {
-        font-size: 0.3rem;
+        font-size: 0.8rem;
     }
 }
 .item_wrapper:hover {
@@ -147,8 +147,8 @@ h1 {
     transition: all 0.7s ease-in-out;
 }
 .accordion_item:active .accordion_images {
-    /*opacity: 0.3;
-    transition-duration: .3s;*/
+    opacity: 0.3;
+    transition-duration: .3s;
     transition: all 1.7s ease-in-out;
 }
 .accordion_item:active .accordion_images .label_img {
