@@ -11,7 +11,7 @@ body {
     background-color: #808080;
     font-family: 'Merriweather', serif;
     transition: all 1.7s ease-in-out;
-    overflow: hidden;
+    
 }
 .header {
     border-bottom: 0.125rem solid aqua;
@@ -24,7 +24,7 @@ body {
 }
 h1 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 2.8rem;
     text-align: center;
     text-transform: uppercase;
     color: aqua;
@@ -33,12 +33,12 @@ h1 {
 }
 @media (max-width: 900px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 @media (max-width: 400px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 .main {
@@ -56,7 +56,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 2em;
     transition: all 1.7s ease-in-out;
 }
 .accordion {
@@ -83,7 +83,7 @@ h1 {
     justify-content: space-between;
     padding-top: 1em;
     padding-bottom: 1em;
-    width: 115%;
+    width: 100%;
     display: flex;
     align-items: center;
     border-radius: 1.25rem;
@@ -95,18 +95,18 @@ h1 {
     transition: all 1.7s ease-in-out;
 }
 .accordion_title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: ghostwhite;
     text-shadow: 0.125rem 0.125rem 0.125rem  #23222293;
 }
 @media (max-width: 900px) {
     .accordion_title {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 @media (max-width: 400px){
     .accordion_title {
-        font-size: 0.8rem;
+        font-size: 0.3rem;
     }
 }
 .item_wrapper:hover {
@@ -122,6 +122,7 @@ h1 {
     transition: all 1.7s ease-in-out;
 }
 .accordion_images {
+    cursor: pointer;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -133,6 +134,12 @@ h1 {
     height: 0%;
     transition: all 1.7s ease-in-out;
 }
+.label_img {
+    width: 0%;
+    height: 0%;
+    /*object-fit: cover;*/
+    transition: all 1.7s ease-in-out;
+}
 .accordion_item:active .accordion_title {
     color: rgb(255, 0, 140);
     opacity: 0.3;
@@ -140,6 +147,11 @@ h1 {
     transition: all 0.7s ease-in-out;
 }
 .accordion_item:active .accordion_images {
+    /*opacity: 0.3;
+    transition-duration: .3s;*/
+    transition: all 1.7s ease-in-out;
+}
+.accordion_item:active .accordion_images .label_img {
     opacity: 0.3;
     transition-duration: .3s;
     transition: all 1.7s ease-in-out;
@@ -156,7 +168,12 @@ h1 {
         height: auto;
         transition: 1.3s;
         cursor: pointer;
-        
+    }
+    .accordion_item:hover .accordion_images .label_img{
+        width: 85%;
+        height: auto;
+        transition: 1.3s;
+        cursor: pointer;
     }
 }
 
@@ -185,6 +202,10 @@ h1 {
 .accordion_input:checked~ .accordion_images {
     width: 85%;
     height: auto;
-    transition: 0.5s ease-out;
+    transition: all 0.7s ease-in-out;
+}
+.accordion_input:checked~ .accordion_images .label_img{
+    width: 85%;
+    height: auto;
     transition: all 0.7s ease-in-out;
 }
