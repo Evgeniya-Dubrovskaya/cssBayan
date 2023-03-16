@@ -132,7 +132,7 @@ h1 {
     border-radius: 1em;
     width: 0%;
     height: 0%;
-    transition: all 1.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 .label_img {
     width: 0%;
@@ -143,18 +143,15 @@ h1 {
 .accordion_item:active .accordion_title {
     color: rgb(255, 0, 140);
     opacity: 0.3;
-    transition-duration: .3s;
-    transition: all 0.7s ease-in-out;
+    /* transition: all 0.7s ease-in-out;*/
 }
 .accordion_item:active .accordion_images {
     opacity: 0.3;
-    transition-duration: .3s;
-    transition: all 1.7s ease-in-out;
+    /*transition: all 1.7s ease-in-out;*/
 }
 .accordion_item:active .accordion_images .label_img {
     opacity: 0.3;
-    transition-duration: .3s;
-    transition: all 1.7s ease-in-out;
+    /*transition: all 1.7s ease-in-out;*/
 }
 
 
@@ -174,6 +171,7 @@ h1 {
         height: auto;
         transition: 1.3s;
         cursor: pointer;
+        
     }
 }
 
